@@ -1,0 +1,98 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercise</title> 
+  <script type="text/javascript">
+  
+  window.onload = function(event) {
+  	var divOne = document.getElementById("div_1");
+  	var divTwo = document.getElementById("div_2");
+  	var divThree = document.getElementById("div_3");
+  	var divFour = document.getElementById("div_4");
+  	var divFive = document.getElementById("div_5");
+  	var lastClicked = document.getElementById("last_clicked");
+  	var prevClicked = document.getElementById("previously_clicked");
+
+  	// Exercise One: Get click on div_1, and alert with innerHTML
+  	// div_1.onclick = function(event) {
+  	// 	alert(divOne.innerHTML);
+  	// }
+
+  	// Excercise Two: repeat the above, but update count with every click
+  	//  var count = 1;
+  	//  div_1.onclick = function(event) {
+		// alert(count);
+		// count++;
+  	// }
+
+  	//Exercise Three: Listen for click on div_1 - div_5, and each time update the last_clicked element with the content from the div that was clicked
+
+  	// div_1.onclick = function(event) {
+  	// 	lastClicked.innerHTML = divOne.innerHTML;
+  	// }
+
+  	// div_2.onclick = function(event) {
+  	// 	lastClicked.innerHTML = divTwo.innerHTML;
+  	// }
+
+  	// div_3.onclick = function(event) {
+  	// 	lastClicked.innerHTML = divThree.innerHTML;
+  	// }
+
+  	// div_4.onclick = function(event) {
+  	// 	lastClicked.innerHTML = divFour.innerHTML;
+  	// }
+
+  	// div_5.onclick = function(event) {
+  	// 	lastClicked.innerHTML = divFive.innerHTML;
+  	// }
+
+  	//Exercise Four: Listen for a click on div_1 - div_5, for each click update the last_clicked element with content from the div that was clicked, and take the old last clicked to update the previously_clicked.
+  	
+  	
+  	divOne.onclick = function(event) {
+  		//var oldClick = document.getElementById("last_clicked"); 
+  		lastClicked.innerHTML = divOne.innerHTML;
+  		//oldClick.innerHTML = prevClicked.innerHTML;
+  	}
+
+  	//Exercise Five: Listen for a click on div_1 - div_5, on click change color to blue and update previously_clicked to whatever was clicked previously. 
+
+  	// divOne.onclick = function(event) {
+  	// 	divOne.style.color = "blue";
+
+  	// }
+
+  	// //Exercise Six: Listen for previously_clicked, when it is clicked cause currentlyClicked to have a different background color
+
+  	// prevClicked.onclick = function(event) {
+  	// 	lastClicked.style.backgroundColor = "red";
+
+  	// }
+
+  }
+
+  </script>
+</head>
+<body>
+  <div id="last_clicked">none</div>
+  <div id="previously_clicked">none</div>
+
+  <div id="div_1"> 
+   1
+  </div>
+  <div id="div_2">
+   2
+  </div>
+  <div id="div_3">
+   3
+  </div>
+  <div id="div_4">
+   4
+  </div>
+  <div id="div_5">
+   5
+  </div>
+
+</body>
+</html>
